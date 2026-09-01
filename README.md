@@ -91,6 +91,7 @@ SNMP_COMMUNITY=public
 Run the Project
 Bash
 python main.py
+
 💡 How It Works
 Telemetry Ingestion: The platform loads maximum unrestricted rows from historical traffic data.
 Live BGP-LS Stream: A Redis pub/sub listener captures live BGP-LS JSON feeds from GoBGP to map new physical hardware instantly.
@@ -98,12 +99,14 @@ Hybrid Fusion: Historical and live physical metrics are dynamically merged into 
 AI Inference: The PyTorch VAE model scores the traffic tensor in real-time, calculating reconstruction loss to flag invisible anomalies.
 Autonomous Remediation: If severe congestion (>85%) or an AI anomaly is detected, NetworkX calculates a new shortest path and Netmiko establishes an SSH session into the physical router to automatically update the OSPF cost.
 Live Visualization: The NOC Dash UI reflects route changes, node health, and traffic metrics dynamically using targeted color mapping and hover overlays.
+
 🎯 Use Cases
 Global ISP Network Surveillance & Monitoring
 Autonomous Traffic Engineering & Remediation
 Zero-Day Deep Anomaly Detection
 Executive NOC Presentations & Stakeholder Reviews
 BGP-LS & OSPF Area Hierarchy Visualization
+
 📸 Screenshots
 (Add screenshots of your local execution here)
 Plaintext
@@ -112,12 +115,14 @@ screenshots/
 ├── anomaly_detected_red.png
 ├── hover_inspection_panel.png
 └── ai_watchdog_logs.png
+
 🔮 Future Enhancements
 Integration with full REST APIs for enterprise SD-WAN controllers.
 Multi-tenant dashboard views for monitoring isolated ASNs.
 Automated PDF incident reporting for detected AI anomalies.
 Expand AI model to predict future congestion using Transformers/LSTMs.
 Geographic IP mapping for dynamic visual routing based on live subsea cable latency.
+
 🤝 Contributing
 Contributions are welcome!
 Fork the repository
@@ -131,10 +136,13 @@ Push to your branch
 Bash
 git push origin feature-name
 Open a Pull Request
+
 📄 License
 This project is licensed under the MIT License.
+
 👨‍💻 Authors
 Jatin Gaur
-GitHub: https://github.com/jatingaurx
+GitHub: https://github.com/jatingaur28
+
 ⭐ Support
 If you found this project helpful, please consider giving it a ⭐ on GitHub!
