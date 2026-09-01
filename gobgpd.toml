@@ -1,0 +1,11 @@
+[global.config]
+  as = 4755
+  router-id = "192.168.1.100"
+
+[[neighbors]]
+  [neighbors.config]
+    neighbor-address = "10.0.0.1" # IP of your Cisco Router
+    peer-as = 4755
+  [[neighbors.afi-safis]]
+    [neighbors.afi-safis.config]
+      afi-safi-name = "ls" # Enable BGP-LS
